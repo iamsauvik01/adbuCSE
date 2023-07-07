@@ -1,0 +1,228 @@
+:root{
+    --Kumbh: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#section-one{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    box-shadow: 2px 2px 5px grey;
+    font-family: var(--Kumbh);
+    
+}
+
+.logo-container{
+    width: 30%;
+    display: flex;  
+    gap: 20px;
+}
+
+.logo-container img{
+    height: 50px;
+    width: auto;
+    margin-left: 30px;
+}
+
+.logo-container .title{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul{
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -3px;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+    background: #192F59; 
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+nav ul li a:hover:after{
+    visibility: visible;
+    width: 100%;
+}
+
+.tag-line{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-family: var(--Kumbh);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.main-image-container{
+    width: 90vw;
+    height: 70vh;
+    margin: 50px auto;
+    background-image: url('./Images/Rectangle\ 1.png');
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+/* Heading for section two/three/four */
+
+.section-heading{     
+    font-size: 2.5rem;
+    margin-left: 40px; 
+    font-family: var(--Kumbh);
+}
+
+/* Only Section 2 and 3's left/right p and button rules are mentioned separately */
+
+#section-two, #section-three{
+    font-family: var(--Kumbh);
+}
+
+.left, .right{
+    max-width: 50vw;
+}
+
+.section-two-container, .section-three-container{
+    margin: 40px 40px;
+    display: flex;
+}
+
+#section-two .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#section-two .left p{
+    max-width: 60%;
+    line-height: 26px;
+}
+
+#section-two .left button, #section-three .right button{
+    height: 50px;
+    width: 140px;
+    background-color: #534A4B;
+    color: white;
+    outline: none;
+    font-family: var(--Kumbh);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+#section-three .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#section-three .right p{
+    max-width: 80%;
+    margin-left: auto;
+    line-height: 26px;
+    font-size: 1.1rem;
+}
+
+#section-three .right button{
+    margin-left: auto;
+}
+
+#section-four{
+    width: 100vw;
+    min-height: 40vh;
+}
+
+#section-five{
+    background-color: #192F59;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    height: 80vh;
+}
+
+.placement-card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arrow-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+#section-six{
+    width: 100vw;
+    background-color: #192F59;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    height: 80vh;
+    margin-top: 20px
+}
+
+.awards-card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.awards-card-container img{
+    height: 400px;
+    width: auto;
+}
+
+#section-seven{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#section-footer{
+    margin-top: 30px;
+    min-height: 40vh;
+    width: 100vw;
+    background-color: #363636;
+    font-family: var(--Kumbh);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
