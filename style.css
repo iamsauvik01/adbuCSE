@@ -90,12 +90,20 @@ nav ul li a:hover:after{
 }
 
 .main-image-container{
-    width: 90vw;
+    width: 100vw;
     height: 70vh;
-    margin: 50px auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image{
+    height: 100%;
+    width: 80%;
     background-image: url('./Images/Rectangle\ 1.png');
     background-repeat: no-repeat;
-    object-fit: contain;
+    background-position: center;
 }
 
 /* Heading for section two/three/four */
