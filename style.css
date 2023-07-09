@@ -200,9 +200,10 @@ flex: 0.5;
 #section-five{
     background-color: #192F59;
     display: flex;
+    gap: 20px;
     flex-direction: column;
-    gap: 80px;
-    height: 80vh;
+    align-items: center;
+    padding-bottom: 20px;
 }
 #section-five > h1 ,#section-six > h1 {
     text-align: center;
@@ -211,13 +212,28 @@ flex: 0.5;
 }
 
 .placement-card-container{
+    width: 30%;
+    height: 200px;
     display: flex;
     justify-content: space-evenly;
 }
+.placement-card-container img {
+    width: 100%;
+    object-fit: contain;
+    transition: 1s ease-in-out;
+}
 .arrow-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.arrow-container i {
+    padding: 20px;
+    border-radius: 10px;
+}
+.arrow-container i:hover{
+    background-color: gray;
+    cursor: pointer;
 }
 
 #section-six{
