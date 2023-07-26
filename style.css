@@ -1,5 +1,12 @@
 :root {
     --Kumbh: 'Kumbh Sans', sans-serif;
+    --greenAccent: #3cb066;
+    --orangeAccent: #f68004;
+    --backgroungGreen: #04AA6D;
+    --greyButton: #534A4B;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #cbcbcb;
 }
 
 
@@ -83,7 +90,7 @@ nav ul li a::after {
     left: 0;
     right: 0;
     width: 10%;
-    background: #04AA6D;
+    background: var(--backgroungGreen);
     transition: 0.3s ease-in-out;
     visibility: hidden;
 }
@@ -94,7 +101,7 @@ nav ul li a:hover:after {
 }
 
 .checkbtn {
-    color: #04AA6D;
+    color: var(--backgroungGreen);
     font-size: 30px;
     line-height: 80px;
     margin-right: 20px;
@@ -157,8 +164,8 @@ flex: 0.5;
 #section-two .left button, #section-three .right button{
     height: 50px;
     width: 140px;
-    background-color: #534A4B;
-    color: white;
+    background-color: var(--greyButton);
+    color: var(--white);
     outline: none;
     font-family: var(--Kumbh);
     font-size: 1rem;
@@ -300,6 +307,7 @@ flex: 0.5;
     background-color: #202020;
     align-items: center;
 }
+
 #section-footer .logo-container{
     width: 100%;
     justify-content: center;
@@ -308,6 +316,182 @@ flex: 0.5;
 #section-footer  span {
     font-size: 1.2rem;
 }
+
+.container {
+    padding: 0 8%;
+}
+
+
+/*admission*/
+.admission-image-container {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.admission-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 60%;
+    opacity: 0.8;
+    filter: brightness(50%);
+}
+
+.admission-image-text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: max-content;
+    -webkit-text-stroke: 1px;
+}
+
+.more-details-green {
+    background-color: var(--greenAccent);
+    color: var(--white);
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.more-details-green font {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.admission-flex-1 h1 {
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+
+.admission-flex-1 h3 {
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.ad-title-detail {
+    padding-top: 20px;
+    display: block;
+    font-size: 20px;
+    color: var(--greyButton);
+}
+
+.program-detail {
+    padding: 30px 0px 30px 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+    width: max-content;
+}
+
+.green-round {
+    background-color: var(--greenAccent);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.small-green-round {
+    background-color: var(--greenAccent);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.admission-flex-1, .admission-flex-2, .admission-flex-3 {
+    margin-top: 50px;
+}
+
+.more-details-orange {
+    text-align: center;
+    background-color: var(--orangeAccent);
+    color: var(--white);
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.more-details-orange font {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.quick-link-holder {
+    background-color: var(--lightgrey);
+    padding: 15px 10px;
+    border-bottom: 5px solid var(--greenAccent);
+    margin-bottom: 30px;
+}
+
+.quick-link-holder font{
+    font-size: 20px;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.quick-link-list font {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.quick-link-list {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.quick-link-list li::before {
+    content: ".";
+    color: var(--greenAccent);
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 0px;
+    display: inline-block;
+    width: 10px;
+}
+
+.ad-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.admission-flex-1 {
+    flex: 4;
+}
+
+.admission-flex-2{
+    flex: 2;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.admission-flex-3 {
+    flex: 2.5;
+}
+
+#section-ad-two {
+    margin-bottom: 100px;
+}
+
+
+
+
+
 
 @media (max-width: 1200px) {
     /* for nav bar */
@@ -367,6 +551,31 @@ flex: 0.5;
         background-color: #04AA6D;
         left: 0;
     }
+
+    .admission-image-text {
+        width: 80%;
+    }
+
+    .quick-link-list {
+        display: block;
+        position: initial;
+        border: 0px;
+    }
+    
+    .program-detail {
+        width: 80%;
+    }
+
+    .ad-flex {
+        display: block;
+    }
+
+    .admission-flex-2{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    
+
 
 }
 
@@ -461,8 +670,11 @@ flex: 0.5;
     .accredations-container img {
         margin: 0;
     }
- 
-   
+
+    .admission-image-text {
+        left: 50%;
+        width: 80%;
+    }
 
 }
 
