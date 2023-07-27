@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./about_us/aboutUs.css" />
+
+    <!-- Javascript -->
+    <script defer src="./about_us/aboutUs.js "></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./navbar.js"></script>
+    <div class="about-us-heading-container">
+      <h1 class="about-us-heading">About Us</h1>
+    </div>
+
+    <div class="about-us-carasouel-wrapper">
+      <div class="about-us-carasouel-container">
+        <div class="about-us-carasouel-slide">
+          <img src="./about_us/Carasouel/image1.png" alt="Image 1" />
+          <img src="./about_us/Carasouel/image2.png" alt="Image 2" />
+          <img src="./about_us/Carasouel/image3.png" alt="Image 3" />
+          <img src="./about_us/Carasouel/image4.png" alt="Image 4" />
+        </div>
+        <div class="about-us-carasouel-indicators">
+          <span class="indicator active" onclick="showSlide(0)"></span>
+          <span class="indicator" onclick="showSlide(1)"></span>
+          <span class="indicator" onclick="showSlide(2)"></span>
+          <span class="indicator" onclick="showSlide(3)"></span>
+        </div>
+        <div class="carousel-controls">
+          <span class="control-btn prev-btn" onclick="prevSlide()"
+            ><i class="fas fa-chevron-left"></i
+          ></span>
+          <span class="control-btn next-btn" onclick="nextSlide()"
+            ><i class="fas fa-chevron-right"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us-paragraph-container">
+      <p>
+        Welcome to the Department of Computer Science and Engineering at Assam
+        Don Bosco University - Azara Campus! Here, we embark on a journey of
+        innovation, technology, and boundless possibilities. Our department is
+        dedicated to shaping the minds of future tech leaders, fostering a
+        passion for problem-solving, and nurturing creativity in the digital
+        realm. With a holistic approach to education and a commitment to
+        cutting-edge research, we strive to equip our students with the
+        knowledge and skills to drive technological advancements and contribute
+        significantly to the ever-evolving world of computer science and
+        engineering. Join us as we unlock the potential of the digital age and
+        make a difference in the tech landscape of today and tomorrow
+      </p>
+    </div>
+
+    <button class="about-us-read-more-button">
+      Read More<i class="fas fa-chevron-right"></i
+      ><i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="cards-wrapper">
+      <div class="card-row-one">
+        <div class="card-container">
+          <div class="card-content">View</div>
+          <img src="./about_us/Cards/awards.jpg" alt="" />
+          <p>Awards and Accolades</p>
+        </div>
+        <div class="card-container">
+          <div class="card-content">View</div>
+          <img src="./about_us/Cards/leadership.jpg" alt="" />
+          <p>Leadership</p>
+        </div>
+        <div class="card-container">
+          <div class="card-content">View</div>
+          <img src="./about_us/Cards/sports.jpg" alt="" />
+          <p>Sports</p>
+        </div>
+      </div>
+
+      <div class="card-row-two">
+        <div class="card-container">
+          <div class="card-content">View</div>
+          <img src="./about_us/Cards/library.png" alt="" />
+          <p>Library</p>
+        </div>
+        <div class="card-container">
+          <div class="card-content">View</div>
+          <img src="./about_us/Cards/labs.png" alt="" />
+          <p>Labs</p>
+        </div>
+      </div>
+    </div>
+    <section id="section-footer">
+        <script src="./footer.js"></script>         
+    </section>
+  </body>
+</html>
