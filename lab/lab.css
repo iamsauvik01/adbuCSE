@@ -1,0 +1,153 @@
+
+:root {
+    --Kumbh: 'Kumbh Sans', sans-serif;
+    --greenAccent: #3cb066;
+    --whiteBackground: #f6fbfc;
+    --blueText: #1c4c7a;
+    --greyText: #848785;
+    --white: #ffffff;
+    --orangeAccent: #f68004;
+    --lightgrey: #cbcbcb;
+}
+
+#section-lab-two {
+    background-color: var(--whiteBackground);
+}
+
+#section-lab-two h1{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 2px;
+    color: var(--greenAccent);
+}
+
+.lab-list-title {
+    background-color: var(--lightgrey);
+    padding: 15px 60px 15px 10px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--greenAccent);
+}
+
+.lab-list-holder {
+    background-color: var(--lightgrey);
+    padding: 0px 10px 15px 10px;
+    margin-bottom: 20px;
+}
+
+.lab-list-holder ul {
+    list-style: none;
+}
+
+.lab-list-holder ul li font{
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.lab-list-holder ul li::before{
+    content: ".";
+    color: var(--greenAccent);
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 0px;
+    display: inline-block;
+    width: 10px;
+}
+
+.divider {
+    height: 5px;
+    background-color: var(--orangeAccent);
+    margin: 20px 0px;
+}
+
+.lab-flex {
+    display: flex;
+    gap: 50px;
+}
+
+.lab-content-holder {
+    height: max-content;
+}
+
+.lab-content-holder h2 {
+    font-size: 26px;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+}
+
+
+.lab-content-holder p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.lab-content-holder h3 {
+    font-size: 22px;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    color: var(--greenAccent);
+    padding-top: 20px;
+}
+
+.lab-content-holder h4 {
+    font-size: 20px;
+    -webkit-text-stroke: 0.5px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.lab-content-holder img {
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+}
+
+.facility-list {
+    padding-top: 20px;
+    padding-left: 30px;
+    list-style-type: decimal;
+}
+
+.facility-list li{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+#lab7 {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+    .lab-flex {
+        display: block;
+    }
+
+    .lab-list-holder ul{
+        display: block;
+        position: initial;
+        border: 0px;
+        background-color: transparent;
+    }
+
+    .lab-list-title h2 {
+        font-size: 26px;
+    }
+
+    .facility-list {
+        display: block;
+        position: initial;
+        border: 0px;
+        background-color: transparent;
+    }
+    
+    .facility-list li{
+        font-size: 16px;
+    }
+
+    .lab-content-holder img {
+        height: 250px;
+    }
+}

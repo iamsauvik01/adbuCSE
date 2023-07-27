@@ -7,6 +7,11 @@
     --white: #ffffff;
     --black: #000000;
     --lightgrey: #cbcbcb;
+    --whiteBackground: #f6fbfc;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -127,6 +132,10 @@ nav ul li a:hover:after {
 
 .main-image-container img{
     object-fit: cover;
+}
+
+.whitebg {
+    background-color: var(--whiteBackground);
 }
 
 

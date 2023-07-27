@@ -20,7 +20,7 @@ document.write(`
         <li><a href="./admission.html">Admission</a></li>
         <li><a href="./faculty.html">Faculty</a></li>
         <li><a href="./comingSoon.html">Placements</a></li>
-        <li><a href="./comingSoon.html">Labratory</a></li>
+        <li><a href="./lab.html">Labratory</a></li>
         <li><a href="./comingSoon.html">Scholarships</a></li>
     </ul>
 </nav>
