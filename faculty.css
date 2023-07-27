@@ -1,0 +1,76 @@
+:root {
+    --Kumbh: 'Kumbh Sans', sans-serif;
+    --greenAccent: #3cb066;
+    --whiteBackground: #f6fbfc;
+    --blueText: #1c4c7a;
+    --greyText: #848785;
+    --white: #ffffff;
+}
+
+#section-fa-two {
+    background-color: var(--whiteBackground);
+}
+
+.department-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 2px;
+    color: var(--greenAccent);
+}
+
+
+.faculty-card {
+    background-color: var(--white);
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    text-align: center;
+}
+
+.faculty-card img {
+    width: 300px;
+    height: 300px;
+}
+
+.faculty-card h2 {
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    color: var(--blueText);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.faculty-card h3 {
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+    color: var(--greyText);
+    padding-bottom: 15px;
+}
+
+.faculty-list-holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    .faculty-card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .faculty-card h2 {
+        font-size: 16px;
+    }
+    
+    .faculty-card h3 {
+        font-size: 16px;
+    }
+}
