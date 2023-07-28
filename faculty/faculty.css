@@ -14,10 +14,11 @@
 .department-title {
     padding-top: 60px;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 900;
     -webkit-text-stroke: 1px;
     letter-spacing: 2px;
+    text-align:center;
     color: var(--greenAccent);
 }
 
