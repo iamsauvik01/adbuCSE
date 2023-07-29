@@ -1,0 +1,217 @@
+header{
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+}
+
+header>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+header>div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header>div>h1{
+    color: white;
+    font-size: 3.2rem;
+    letter-spacing: 4px;
+    padding: 19% 0 0 8%;
+}
+
+main{
+    padding: 30px 160px 0 160px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.first-paragraph{
+    text-align: justify;
+    color: var(--lightbrown);
+    font-size: 1.2rem;
+}
+
+.total-scholarship-container{
+    margin-top: 80px;
+    display: grid;
+    place-items: center;
+    grid-gap: 20px;
+}
+
+.total-scholarship-container>h3{
+    font-size: 1.5rem;
+}
+
+.total-scholarship-container>h1{
+    color: #ff3131;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.second-paragraph{
+    margin-top: 80px;
+    background-color: white;
+    box-shadow: 0 4px 5px #6e6e6e;
+    text-align: justify;
+    color: var(--lightbrown);
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.testimonial-wrapper{
+    margin-top: 80px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #e2e3e2;
+}
+
+.testimonial-wrapper>h1{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+.testimonial-card-wrapper{
+    height: 100%;
+    overflow-y: scroll;
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+}
+
+.testimonial-card-container{
+    margin-top: 80px;
+    background-color: #fff;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    padding-right: 30px;
+}
+
+.testimonial-card-container>img{
+    height: 90px;
+    margin: 20px;
+}
+
+.testimonial-description-container{
+    height: 100%;
+    font-family: var(--kumbh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.testimonial-description-paragraph{
+    text-align: justify;
+}
+
+.right-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.right-section-container-one{
+    height: 80px;
+    width: 80%;
+    background-color: #e2e3e2;
+    border-bottom: 5px solid var(--greenAccent);
+    display: grid;
+    place-items: center;
+}
+
+.right-section-container-one>h1, .right-section-container-three>h1{
+    font-family: var(--kumbh);
+}
+
+.right-section-container-two{
+    height: fit-content;
+    width: 80%;
+    background-color: #e2e3e2;
+    padding: 10px 10px 10px 40px;
+}
+
+.right-section-container-two>ul{
+    list-style-type: disc; 
+    color: #f68004;
+}
+
+.right-section-container-two>ul>li>span{
+    color: black;
+    font-family: var(--kumbh);
+    font-weight: bold;
+}
+
+.right-section-container-three{
+    height: 80px;
+    width: 80%;
+    background-color: #e2e3e2;
+    border-bottom: 5px solid #f68004;
+    display: grid;
+    place-items: center; 
+}
+
+.right-section-container-four, .right-section-container-five{
+    height: 200px;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 6px 6px var(--lightgrey);
+    border-radius: 12px;
+}
+
+.right-section-container-four>img, .right-section-container-five> img{
+    height: 80px;
+    width: auto;
+}
+
+.right-section-container-four>h4, .right-section-container-five> h4{
+    color: #f68004;
+    font-family: var(--kumbh);
+}
+
+@media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    main{
+        padding: 30px 20px 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-wrapper>h1{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bolder;
+    }
+
+    .testimonial-wrapper{
+        height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        background-color: #e2e3e2;
+    }
+
+    .right-wrapper{
+        margin-top: 30px;
+    }
+    
+
+}
+
+
