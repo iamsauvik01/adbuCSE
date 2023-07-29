@@ -21,7 +21,7 @@ document.write(`
         <li><a href="./faculty.html">Faculty</a></li>
         <li><a href="./comingSoon.html">Placements</a></li>
         <li><a href="./lab.html">Labratory</a></li>
-        <li><a href="./scholdarship.html">Scholarships</a></li>
+        <li><a href="./scholarship.html">Scholarships</a></li>
     </ul>
 </nav>
 `);
