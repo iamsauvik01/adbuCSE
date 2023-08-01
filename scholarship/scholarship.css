@@ -95,7 +95,7 @@ font-weight: bold;
 
 .testimonial-wrapper{
     display: flex;
-    gap:30px;
+    gap:10px;
     width: 65%;
 }
 
@@ -177,6 +177,7 @@ font-weight: bold;
 .right-section-container-two>ul{
     list-style-type: disc; 
     color: #f68004;
+    font-size: 16px;
 }
 
 .right-section-container-two>ul>li>span{
