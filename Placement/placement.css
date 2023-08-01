@@ -1,105 +1,125 @@
-header{
-    height: 60vh;
-    width: 100vw;
+:root {
+    --Kumbh: 'Kumbh Sans', sans-serif;
+    --greenAccent: #3cb066;
+    --orangeAccent: #f68004;
+    --backgroungGreen: #04AA6D;
+    --greyButton: #534A4B;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #cbcbcb;
+    --whiteBackground: #f6fbfc;
+}
+
+
+body{
+    background-color:var(--whiteBackground);
+}
+
+.placement-image-container {
+    height: 350px;
     position: relative;
+    overflow: hidden;
 }
 
-header>img{
-    height: 100%;
+.placement-image-container img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: 0% 10%;
+    opacity: 0.9;
+    filter: brightness(30%);
 }
 
-header>div{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.6);
+.placement-image-text {
+    font-family: var(--Kumbh);
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: max-content;
+    -webkit-text-stroke: 1px;
 }
 
-header>div>h1{
-    color: white;
-    font-size: 3.2rem;
-    letter-spacing: 4px;
-    padding: 19% 0 0 8%;
-}
 
 main{
-    padding: 30px 160px 0 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
 }
-
-
 .first-paragraph{
     font-family: var(--Kumbh);
-    line-height: 2;
+    line-height: 1.5;
 }
 
-.first-paragraph>p{
-    margin-bottom:20px ;
+.first-paragraph p {
+    padding-top: 20px;
+    display: block;
+    font-size: 20px;
+    color: var(--black);
 }
 
 .placement-cards-wrapper{
-    height: 100vh;
-}
-
-.placement-card-container{
-    margin-bottom: 40px;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    background-color: white;
-    box-shadow: 2px 2px 6px grey;
-    border-radius: 10px;
-}
-
-.placement-card-container>img{
-    height: 200px;
-    width: auto;
-    padding: 30px;
-}
-
-.placement-card-container>div{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 40px;
 }
 
-.placement-cards-wrapper>button{
-    height: 60px;
-    width: 300px;
-    background-color: var(--orangeAccent);
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-family: var(--Kumbh);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+.placement-cards-container{
+    background-color: var(--white);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    gap: 20px;
 }
 
-@media (max-width: 480px) {
-    body{
-        overflow-x: hidden;
-    }
+.placement-cards-container > img{
+    width: 80px;
+    height: 80px;
+}
+.placement-cards-container > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+}
+.placement-cards-container > div >h1{
+    font-size: 28px;
+}
+.placement-more-detail{
+    margin-top:30px;
+    width: 400px;
+    float: left;  
+    font-size: 20px;
+    text-transform: uppercase;
+}
 
-    main{
-        padding: 30px 20px 0 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .placement-card-container{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       height: 300px;
-    }
-
-    .placement-card-container>img{
-        margin: 0;
+@media (max-width: 1200px) {
+    .placement-image-text {
+        width: 80%;
     }
 }
 
+@media (max-width: 750px) {
+    .placement-image-text {
+        left: 50%;
+        width: 80%;
+    }
+    .placement-cards-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
