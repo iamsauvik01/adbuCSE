@@ -246,6 +246,9 @@ font-weight: bold;
         width: 100%;
 
     }
+    .h1-div h1{
+        font-size: 20px;
+    }
     .right-section-container-one,.right-section-container-two , .right-section-container-three,.right-section-container-four,.right-section-container-five {
         width: 100%;
     }
@@ -255,6 +258,9 @@ font-weight: bold;
     }
     .right-section-container-four,.right-section-container-five{
         font-size: 14px;
+    }
+    .right-section-container-two>ul{
+        display: block;
     }
    
 }
