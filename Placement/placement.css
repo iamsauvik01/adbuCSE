@@ -18,7 +18,7 @@ body{
 .placement-image-container {
     height: 350px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .placement-image-container img{
@@ -112,6 +112,9 @@ main{
 }
 
 @media (max-width: 750px) {
+    .first-paragraph p {
+        font-size: 18px;
+    }
     .placement-image-text {
         left: 50%;
         width: 80%;
@@ -121,5 +124,11 @@ main{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .placement-cards-container > div{
+        font-size: 16px;
+    }
+    .placement-cards-container > div >h1{
+        font-size: 24px;
     }
 }
