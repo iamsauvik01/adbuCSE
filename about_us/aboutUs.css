@@ -209,19 +209,11 @@
     transform: translateY(-90px);
 }
 
-.about-us-paragraph-container{
-  transform: translateY(-250px);
-}
-
-.about-us-read-more-button{
-  transform: translate(-55px,-250px);
-}
-
 .cards-wrapper{
-  transform: translateY(-220px);
   width: 100vw;
   margin-bottom: 200px;
 }
+    
 .card-row-one, .card-row-two{
   display: flex;
   flex-direction: column;
@@ -254,6 +246,6 @@
   bottom: 0;
 }
 #section-footer{
-  margin-top: 270%;
+  margin-top: 300%;
 }
 }
