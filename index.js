@@ -1,11 +1,11 @@
 var slideIndex = 0;
-var slides = document.querySelectorAll(".placement-card-container img");
+var slides = document.querySelectorAll("placement-card-container img");
 var totalSlides = slides.length;
 
 showSlide(slideIndex);
 
-var leftBtn = document.querySelector(".fa-chevron-left");
-var rightBtn = document.querySelector(".fa-chevron-right");
+var leftBtn = document.querySelector("fa-chevron-left");
+var rightBtn = document.querySelector("fa-chevron-right");
 
 leftBtn.addEventListener("click", function () {
   slideIndex--;

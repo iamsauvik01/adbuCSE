@@ -1,40 +1,61 @@
-let currentIndex = 0;
-const slides = document.querySelectorAll('.about-us-carasouel-slide img');
-const indicators = document.querySelectorAll('.indicator');
+const aboutslides = document.querySelectorAll('.slide')
+const aboutTaps = document.querySelectorAll('.slider_tabs')
+var counter = 0
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.style.display = i === index ? 'block' : 'none';
-    indicators[i].classList.toggle('active', i === index);
-  });
-
-  currentIndex = index;
-}
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
-}
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
-}
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+aboutslides.forEach(
+  (slide, index) => {
+    slide.style.left = `${index * 100}%`
   }
-  
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
+)
+
+setInterval(function() {
+  if(counter == 3)
+  {
+    counter = 0
+  } else {
+    counter++
   }
-  
-  // Show the initial slide
-  showSlide(currentIndex);
+  slideImage()
+}, 5000);
 
-setInterval(nextSlide, 5000);
+const goPrevAbout = () => {
+  if(counter == 0)
+  {
+    counter = 3
+  } else {
+    counter--
+  }
+  slideImage()
+}
+
+const goNextAbout = () => {
+  if(counter == 3)
+  {
+    counter = 0
+  } else {
+    counter++
+  }
+  slideImage()
+}
+
+const goto = (i) => {
+  counter = i
+  slideImage()
+}
 
 
-showSlide(currentIndex);
+const slideImage = () => {
+  aboutslides.forEach(
+    (slide) => {
+      slide.style.transform = `translateX(-${counter * 100}%)`
+    }
+  )
+  aboutTaps.forEach(
+    (tap, index) => {
+      if(counter == index)
+        tap.classList.add("active")
+      else 
+        tap.classList.remove("active")
+    }
+  )
+}

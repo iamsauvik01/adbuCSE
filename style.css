@@ -8,6 +8,7 @@
     --black: #000000;
     --lightgrey: #cbcbcb;
     --whiteBackground: #f6fbfc;
+    --indigoblue: #1a237e;
 }
 
 html {
@@ -49,6 +50,41 @@ nav {
     padding: 10px 0 20px 80px; 
     z-index: 999;
 }
+
+.dropbtn {
+    background-color: var(--white);
+    padding: 0px 0px 0px 0px;
+    font-size: 18px;
+    font-family: var(--Kumbh);
+    font-weight: 900;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content ul{
+    display: block;
+}
+
+.dropdown-content ul li{
+    padding: 10px 0px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 
 .logo-container {
     width: 40%;
