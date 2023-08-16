@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./admin/admin.css">
+
+    <title>Admin</title>
+</head>
+    <section id="admin-section-one">
+        <div class="admin-nav">
+            <h1>
+                PUBLICATION PAGE
+            </h1>
+            <div class="menu" onclick=openNav()>
+                <img src="./admin/icons8-menu-50.png" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    <section id="admin-section-two">
+        <div class="admin-dashboard"  id="mySidenav">
+            <div class="admin-dashboard-logo-holder">
+                <img src="Images/Logo.png" alt=""/>
+                <h2>
+                    ADMIN DASHBOARD
+                </h2>
+            </div>
+
+            <div class="dashboard-list-holder">
+                <ul>
+                    <li>
+                        <div class="admin-list" onclick=toggleList(1)>
+                            <img src="admin/graduate-cap-svgrepo-com (1).svg" alt=""/>
+                            <font>Publications
+                            </font>
+                        </div>
+                        <div class="admin-sub-list" id="sub-1">
+                            <a href="./admin.html"><font>Add Publication
+                            </font></a>
+                            <a href="./editpub.html"><font>Edit Publication
+                            </font></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="admin-list" onclick=toggleList(2)>
+                            <img src="admin/search.svg" alt=""/>
+                            <font>Research Grants
+                            </font>
+                        </div>
+                        <div class="admin-sub-list" id="sub-2">
+                            <font class="indigo">Add Research Grants
+                            </font>
+                            <a href="./editgrant.html"><font>Edit Research Grants
+                            </font></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="admin-add">
+            <div class="admin-add-title">
+                <h4>
+                    ADD RESEARCH GRANTS
+                </h4>
+            </div>
+            <div class="admin-add-form">
+                <form  action="#">
+                    <label>
+                        Year of Grant
+                    </label>
+                    <input type="text" id="grant" name="grant">
+                    <label>
+                        PI & CO-P
+                    </label>
+                    <input type="text" id="pi" name="pi">
+                    <label>
+                        Granting Agency
+                    </label>
+                    <input type="text" id="agency" name="agency">
+                    <label>
+                        Title of Project
+                    </label>
+                    <input type="text" id="title" name="title">
+                    <div class="split-in">
+                        <div>
+                            <label>
+                                Amount of Grant
+                            </label>
+                            <input type="text" id="amount" name="amount">
+                        </div>
+                        <div>
+                            <label>
+                                Ongoing / Completed
+                            </label>
+                            <input type="text" id="completion" name="completion">
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="admin-submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+<body>
+    <script src="admin/admin.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+.admin-nav {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.admin-nav h1{
+    font-size: 50px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: var(--white);
+    letter-spacing: 2px;
+}
+
+#admin-section-two {
+    display: flex;
+}
+
+.admin-dashboard {
+    border-right: 3px solid var(--indigoblue);
+    flex: 2;
+}
+
+.admin-dashboard-logo-holder  {
+    position: relative;
+    height: 150px;
+    border-bottom: 5px solid var(--whiteBackground);
+}
+
+.admin-dashboard-logo-holder img {
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.admin-dashboard-logo-holder h2 {
+    width: fit-content;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    color: var(--indigoblue);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--indigoblue);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.admin-add {
+    background-color: var(--whiteBackground);
+    flex: 7;
+    padding: 0 8%;
+}
+
+.admin-list{
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.admin-list img{
+    width: 30px;
+    height: 30px;
+}
+
+.admin-list font{
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.admin-sub-list {
+    display: none;
+}
+
+.admin-sub-list font{
+    display: block;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.indigo {
+    color: var(--indigoblue);
+}
+
+.show {
+    display: block;
+}
+
+.admin-add-title {
+    background-color: var(--white);
+    padding: 15px;
+    margin-top: 80px;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.admin-add-title h4{
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.admin-add-form {
+    padding: 15px;
+    padding-left: 30px;
+    background-color: var(--white);
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.admin-add-form label, .admin-add-form input {
+    display: block;
+}
+
+.admin-add-form label{
+    font-size: 16px;
+    font-weight: bold
+}
+
+.admin-add-form input{
+    border: 1px solid var(--indigoblue);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 20px;
+    outline: none;
+}
+
+.admin-add-form input:focus{
+    border: 3px solid var(--indigoblue);
+}
+
+.admin-add-form input[type=submit]{
+    width: fit-content;
+    padding: 10px 50px;
+    height: fit-content;
+    color: var(--white);
+    background-color: var(--indigoblue);
+    cursor: pointer;
+}
+
+table, td, th {
+    border: 1px solid var(--indigoblue);
+    box-sizing: border-box;
+}
+
+td, th {
+    padding: 15px 0;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 1px;
+}
+
+td {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    margin: 30px 0;
+}
+
+.edit-but {
+    background-color: var(--backgroungGreen);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    height: fit-content;
+}
+
+.delete-but {
+    background-color: var(--redbg);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.delete-but img{
+    height: 18px;
+    width: 18px;
+}
+
+.edit-td {
+    display: flex;
+}
+
+.split-in {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split-in div{
+    width: 45%;
+}
+
+.menu {
+    display: none;
+}
+
+.admin-dashboard {
+    transition: 0.3s;
+    padding: 0 10px;
+    transform: translate(0px,0px);
+}
+
+@media (max-width: 750px) {
+    .menu {
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .menu img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .admin-nav {
+        display: flex;
+    }
+
+    .admin-dashboard {
+        width: 300px;
+        height: 100%;
+        transform: translate(-300px,0px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: var(--white);
+    }
+
+    #admin-section-two {
+        display: block;
+    }
+    
+}
