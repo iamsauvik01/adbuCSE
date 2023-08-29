@@ -19,6 +19,7 @@
 
     <title>Admin</title>
 </head>
+
 <body>
     <section id="admin-section-one">
         <div class="admin-nav">
@@ -26,7 +27,7 @@
                 PUBLICATION PAGE
             </h1>
             <div class="menu" onclick=openNav()>
-                <img src="./admin/icons8-menu-50.png" alt=""/>
+                <img src="./admin/icons8-menu-50.png" alt="" />
             </div>
         </div>
     </section>
@@ -34,7 +35,7 @@
     <section id="admin-section-two">
         <div class="admin-dashboard" id="mySidenav">
             <div class="admin-dashboard-logo-holder">
-                <img src="Images/Logo.png" alt=""/>
+                <img src="Images/Logo.png" alt="" />
                 <h2>
                     ADMIN DASHBOARD
                 </h2>
@@ -44,28 +45,34 @@
                 <ul>
                     <li>
                         <div class="admin-list" onclick=toggleList(1)>
-                            <img src="admin/graduate-cap-svgrepo-com (1).svg" alt=""/>
+                            <img src="admin/graduate-cap-svgrepo-com (1).svg" alt="" />
                             <font>Publications
                             </font>
                         </div>
                         <div class="admin-sub-list" id="sub-1">
                             <font class="indigo">Add Publication
                             </font>
-                            <a href="./editpub.html"><font>Edit Publication
-                            </font></a>
+                            <a href="./editpub.html">
+                                <font>Edit Publication
+                                </font>
+                            </a>
                         </div>
                     </li>
                     <li>
                         <div class="admin-list" onclick=toggleList(2)>
-                            <img src="admin/search.svg" alt=""/>
+                            <img src="admin/search.svg" alt="" />
                             <font>Research Grants
                             </font>
                         </div>
                         <div class="admin-sub-list" id="sub-2">
-                            <a href="./addgrant.html"><font>Add Research Grants
-                            </font></a>
-                            <a href="./editgrant.html"><font>Edit Research Grants
-                            </font></a>
+                            <a href="./addgrant.html">
+                                <font>Add Research Grants
+                                </font>
+                            </a>
+                            <a href="./editgrant.html">
+                                <font>Edit Research Grants
+                                </font>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -79,7 +86,7 @@
                 </h4>
             </div>
             <div class="admin-add-form">
-                <form  action="#">
+                <form action="#">
                     <label>
                         Title of Paper
                     </label>
@@ -104,4 +111,5 @@
     <script src="admin/admin.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

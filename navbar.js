@@ -31,7 +31,7 @@ document.write(`
         <li><a href="./admission.html">Admission</a></li>
         <li><a href="./placement.html">Placements</a></li>
         <li><a href="./scholarship.html">Scholarships</a></li>
-        <li><a href="./publication.html">Publications</a></li>
+        <li><a href="./publication.php">Publications</a></li>
     </ul>
 </nav>
 `);

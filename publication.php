@@ -7,6 +7,8 @@ include "connect.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adbuCSE</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo.png" sizes="16x16" style="object-fit: cover;">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,7 +25,8 @@ include "connect.php";
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./publication/publication.css">
-    <title>Publication</title>
+
+
 </head>
 
 <body>
