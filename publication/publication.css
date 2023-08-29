@@ -98,6 +98,10 @@ td,tr,th {
     padding: 20px;
 }
 
+td{
+    font-size: 18px;
+}
+
 th {
     width: 40px;
     border-bottom: 5px solid var(--indigoblue);
@@ -142,4 +146,41 @@ th:nth-child(4) {
 
 .research-table th:nth-child(6) {
     width: 100px;
+}
+
+/* research grant  custom table design  */
+
+/* data tabel-search */
+
+.dataTables_filter label{
+    font-size: 18px;
+    padding-right: 5px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    height: 38px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.table.dataTable {
+ border-spacing:10px ;
+}
+
+.table.dataTable > thead > tr{
+    border-bottom: 3px solid #1A237E;
+}
+
+.table.dataTable thead > tr > th.sorting{
+    border-bottom: 4px solid #1A237E;
+}
+
+.table.dataTable thead th {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.table.dataTable tbody td{
+    font-size: 18px;
+    padding: 20px 0;
 }
