@@ -2,6 +2,10 @@ body {
   background-color: var(--whiteBackground);
 }
 
+font, p, li {
+  text-align: justify;
+}
+
 .department-title {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -199,6 +203,11 @@ body {
   padding-bottom: 3%;
 }
 
+.our-mission-li{
+  padding-left: 15px;
+  font-size: 18px;
+}
+
 
 
 @media (max-width: 750px) {
@@ -229,5 +238,11 @@ body {
   
   .small {
     display: block;
+  }
+
+  .our-mission-li{
+    display: block;
+    padding-left: 10px;
+    font-size: 16px;
   }
 }
