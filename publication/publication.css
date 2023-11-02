@@ -99,7 +99,7 @@ td,tr,th {
 }
 
 td{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 th {
@@ -153,7 +153,7 @@ th:nth-child(4) {
 /* data tabel-search */
 
 .dataTables_filter label{
-    font-size: 18px;
+    font-size: 16px;
     padding-right: 5px;
 }
 .dataTables_wrapper .dataTables_filter input {

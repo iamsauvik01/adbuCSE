@@ -10,7 +10,7 @@ body {
   -webkit-text-stroke: 1px;
   letter-spacing: 2px;
   text-align:center;
-  color: var(--greenAccent);
+  color: var(--indigoblue);
 }
 
 
@@ -114,6 +114,7 @@ body {
 .more-details-green {
   background-color: var(--greenAccent);
   color: var(--white);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 15px 25px;
   border-radius: 5px;
