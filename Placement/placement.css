@@ -1,0 +1,134 @@
+:root {
+    --Kumbh: 'Kumbh Sans', sans-serif;
+    --greenAccent: #3cb066;
+    --orangeAccent: #f68004;
+    --backgroungGreen: #04AA6D;
+    --greyButton: #534A4B;
+    --white: #ffffff;
+    --black: #000000;
+    --lightgrey: #cbcbcb;
+    --whiteBackground: #f6fbfc;
+}
+
+
+body{
+    background-color:var(--whiteBackground);
+}
+
+.placement-image-container {
+    height: 350px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.placement-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 10%;
+    opacity: 0.9;
+    filter: brightness(30%);
+}
+
+.placement-image-text {
+    font-family: var(--Kumbh);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: max-content;
+    -webkit-text-stroke: 1px;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.first-paragraph{
+    font-family: var(--Kumbh);
+    line-height: 1.5;
+}
+
+.first-paragraph p {
+    padding-top: 20px;
+    display: block;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.placement-cards-wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.placement-cards-container{
+    background-color: var(--white);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.placement-cards-container > img{
+    width: 80px;
+    height: 80px;
+}
+.placement-cards-container > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 10px;
+}
+.placement-cards-container > div >h1{
+    font-size: 28px;
+}
+.placement-more-detail{
+    margin-top:30px;
+    width: 400px;
+    float: left;  
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    .placement-image-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .first-paragraph p {
+        font-size: 18px;
+    }
+    .placement-image-text {
+        left: 50%;
+        width: 80%;
+    }
+    .placement-cards-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .placement-cards-container > div{
+        font-size: 16px;
+    }
+    .placement-cards-container > div >h1{
+        font-size: 24px;
+    }
+}
